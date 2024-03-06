@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+        let add = function(a,b){
+            return a+b;
+        }
+        let sub=(a,b)=> {
+            return a-b;
+        }
+        let twice = n=> n*2;
+
+        let arr=[1,2,3,4,5];
+
+        let result = arr.map(function(n){
+            return n+1;
+        })
+
+        let result = arr.map(n=>n+1)
+
+        let Users =[
+            {name:'Alice',age:22},
+            {name:'Bob',age:23},
+            {name:'Charie',age:17},
+            {name:'Dave',age:24},
+
+        ];
+        let names=Users.map(u=>u.name);
+        let over=Users.filter(u=>u.age>= 20);
+        let result=Users.filter(u=>u.age>=20).map(u=>u.map)
+    </script>
+</body>
+</html>
