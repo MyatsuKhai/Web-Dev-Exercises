@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Lucy = {
+            name : "Lucy",
+            run: function() {
+                console.log(`${this.name} is running...`);
+            }
+        }
+        class Animal{
+            constructor(name){
+                this.name=name;
+            }
+            static info(){
+                console.log("Animal class")
+            }
+            run(){
+                console.log(`${this.name} is running...`);
+            }
+        }
+        class Dog extends Animal{
+            hello(){
+                console.log(`${this.name} says hello.`);
+            }
+        }
+        let bobby = new Dog("Bobby");
+        let Lucky = new Dog("Lucky");
+
+    </script>
+    <script>
+        //property shortand
+        //let name ='Alice';
+        //let age = 22;
+        //let user = {name,age};
+
+        //array destructure
+        let nums = [1,2,3];
+        let [n1,n2]=nums;
+
+        //objetct destructure
+        let user ={name:'Bob',age:23};
+        let{name,age}=user;
+
+        //array spread
+        let num1 =[1,2]
+        let num2 =[3,4]
+        let num3 =[...num1,...num2];
+    </script>
+</body>
+</html>
